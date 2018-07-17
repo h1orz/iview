@@ -1,4 +1,4 @@
-# iView 2.x fixed.
+# iView fix fast!
 
 > This project is for iView.js.
 > To fix some bug before origin release.

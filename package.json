@@ -1,8 +1,8 @@
 {
-  "name": "iview2-fix",
+  "name": "iview-fix-fast",
   "version": "2.14.3-1",
   "title": "iView",
-  "description": "iView 2.x fixed",
+  "description": "To fix some bug before origin release.",
   "homepage": "http://www.iviewui.com",
   "keywords": [
     "iview",
