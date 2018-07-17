@@ -1,8 +1,8 @@
 {
-    "name": "iview",
-    "version": "2.14.3",
+    "name": "iview-fix",
+    "version": "2.14.3-1",
     "title": "iView",
-    "description": "A high quality UI components Library with Vue.js",
+    "description": "iView 2.x fixed By Hain",
     "homepage": "http://www.iviewui.com",
     "keywords": [
         "iview",
@@ -33,9 +33,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/iview/iview"
+        "url": "https://github.com/h1orz/iview"
     },
-    "author": "Aresn",
+    "author": "Hain",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/iview/iview/issues"
