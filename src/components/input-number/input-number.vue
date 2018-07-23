@@ -286,7 +286,7 @@
                 val = Number(val);
 
                 if(isEmptyString){
-                    this.setValue(null);
+                    // this.setValue(null);
                     return;
                 }
                 if (event.type == 'change'){
