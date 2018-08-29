@@ -29,7 +29,9 @@
                 @focus="handleFocus"
                 @blur="handleBlur"
                 @input="handleInput"
-                @change="handleChange">
+                @change="handleChange"
+                @compositionstart="handleCompositionstart"
+                @compositionend="handleCompositionend">
             <div :class="[prefixCls + '-group-append']" v-if="append" v-show="slotReady"><slot name="append"></slot></div>
         </template>
         <textarea
@@ -55,7 +57,9 @@
             @keydown="handleKeydown"
             @focus="handleFocus"
             @blur="handleBlur"
-            @input="handleInput">
+            @input="handleInput"
+            @compositionstart="handleCompositionstart"
+            @compositionend="handleCompositionend">
         </textarea>
     </div>
 </template>
@@ -262,6 +266,12 @@
                 this.$emit('input', '');
                 this.setCurrentValue('');
                 this.$emit('on-change', e);
+            },
+            handleCompositionstart (event) {
+                this.$emit('on-compositionstart', event);
+            },
+            handleCompositionend (event) {
+                this.$emit('on-compositionend', event);
             }
         },
         watch: {
