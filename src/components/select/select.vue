@@ -122,6 +122,10 @@
                 type: Boolean,
                 default: false
             },
+            itemInline: {
+                type: Boolean,
+                default: false
+            },
             notFoundText: {
                 type: String
             },
@@ -184,6 +188,7 @@
                 return {
                     [prefixCls + '-dropdown-transfer']: this.transfer,
                     [prefixCls + '-multiple']: this.multiple && this.transfer,
+                    [prefixCls + '-dropdown-inline']: this.itemInline,
                     ['ivu-auto-complete']: this.autoComplete,
                 };
             },

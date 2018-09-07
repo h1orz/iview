@@ -1,5 +1,7 @@
 @select-dropdown-prefix-cls: ~"@{css-prefix}select-dropdown";
 @transfer-no-max-height: ~"@{css-prefix}transfer-no-max-height";
+@select-dropdown-inline-prefix-cls: ~"@{css-prefix}select-dropdown-inline";
+@select-dropdown-list-prefix-cls: ~"@{css-prefix}select-dropdown-list";
 
 .@{select-dropdown-prefix-cls} {
     width: inherit;
@@ -25,5 +27,16 @@
 .@{modal-prefix-cls} {
     .@{select-dropdown-prefix-cls} {
         position: absolute !important;
+    }
+}
+
+.@{select-dropdown-inline-prefix-cls} {
+    padding: 5px;
+    .@{select-dropdown-list-prefix-cls} {
+        display: block;
+        .@{select-item-prefix-cls} {
+            float: left;
+            clear: none;
+        }
     }
 }
